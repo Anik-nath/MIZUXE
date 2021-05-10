@@ -1,0 +1,100 @@
+$bodycolor:#fff;
+$contentcolor:#3292a6;
+$overlay: rgba(50, 146, 156, 0.7);
+
+body {
+    background-color: $bodycolor;
+}
+
+.navbar {
+    box-shadow: 2px 2px 5px $contentcolor;
+    opacity: 0.9;
+
+    .nav-item {
+        font-size: 1.4rem;
+        padding-right: 20px;
+
+        .nav-link {
+            color: #252525;
+            margin-right: 5px;
+        }
+
+        .nav-link:hover {
+            color: $contentcolor;
+        }
+    }
+
+    .nav-item:last-child {
+        padding-right: 0px;
+    }
+}
+
+#home {
+    background: url('../img/mountains.jpg');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 700px;
+    margin-top: 110px;
+    color: $bodycolor;
+
+    .home-overlay {
+        background-color: $overlay;
+        min-height: 700px;
+
+        .home-inner {
+            padding-top: 40px;
+
+            a {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+#form-section {
+    background-color: #252525;
+}
+
+#about,
+#contact {
+    background: #f8f9fa;
+}
+
+#person {
+    img {
+        margin-top: -60px;
+    }
+
+    .fa {
+        font-size: 25px;
+    }
+
+    .card:hover {
+        background: $contentcolor;
+        color: $bodycolor;
+
+        .fa {
+            color: $bodycolor;
+        }
+    }
+
+}
+
+#footer {
+    p {
+        font-size: 25px;
+    }
+}
+
+
+@media(max-width:576px) {
+    #home {
+        text-align: center;
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+}
